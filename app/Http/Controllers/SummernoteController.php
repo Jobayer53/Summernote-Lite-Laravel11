@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 class SummernoteController extends Controller
 {
     function store(Request $request){
+
         $summernote = new Summernote();
         $summernote->data = $request->data;
         $summernote->save();
